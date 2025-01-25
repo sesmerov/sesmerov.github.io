@@ -121,7 +121,6 @@ a:hover {
         box-shadow: none;
     }
 
-    /* MODIFICAR  PARA CAMBIAR POR ICONO BOOTSTRAP */
     .main-header .navbar-toggler span {
         width: 25px;
         height: 2px;
@@ -273,6 +272,13 @@ main {
     }
 }
 
+@media (max-width:375px){
+    .email{
+        font-size: 10px;
+        letter-spacing: 1.2;
+    }
+}
+
 
 /* Secciones Comun */
 
@@ -328,6 +334,13 @@ main {
 @media (max-width:767px){
     .section-heading h3{
         font-size: 38px;
+    }
+}
+
+@media (max-width:450px){
+    .section-heading h3{
+        font-size: 21px;
+        text-align: center;
     }
 }
 
@@ -412,6 +425,11 @@ main {
     padding-left: 15px;
 }
 
+@media (max-width:375px){
+    h6{
+        font-size: 12px;
+    }
+}
 
 /* Certificaciones */
 
@@ -433,6 +451,7 @@ main {
         height: 150px;
     }
 }
+
 
 
 /* Contacto */
