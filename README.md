@@ -1,6 +1,6 @@
 # Portafolio Personal - Diego Sesmero Fernández
 
-Este es el repositorio del portafolio personal de **Diego Sesmero Fernández**, un desarrollador web apasionado por la programación, la computación en la nube y las nuevas tecnologías. Este portafolio sirve como una vitrina para mis habilidades, proyectos y certificaciones.
+Mi portafolio personal. Echale un vistazo!
 
 ## 🌐 Enlace al Portafolio
 
