@@ -1,5 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+@font-face {
+    font-family: 'Jost';
+    src: url('./fonts/Jost-VariableFont_wght.ttf') format('truetype');
 
+}
 
 :root {
     --primary-color: #0687e2;
@@ -7,7 +10,7 @@
 }
 
 body {
-    font-family: "Jost", sans-serif;
+    font-family: 'Jost', sans-serif;
     font-weight: 400;
     color: #555;
 }
@@ -423,6 +426,7 @@ main {
     margin: 0;
     color: var(--dark-color);
     padding-left: 15px;
+    font-weight: 500;
 }
 
 @media (max-width:375px){
