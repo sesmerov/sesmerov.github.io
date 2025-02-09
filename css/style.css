@@ -454,7 +454,7 @@ main {
     font-size: 2rem;
 }
 
-#projects h5 {
+#projects h3 {
     text-transform: uppercase;
     letter-spacing: 2px;
 }
@@ -562,7 +562,7 @@ main {
     font-size: 25px;
 }
 
-.contact-infos h5 {
+.contact-infos h3 {
     font-size: 14px;
     margin: 0 0 5px;
     font-weight: 400;
