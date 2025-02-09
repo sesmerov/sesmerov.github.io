@@ -54,6 +54,10 @@ a:hover {
     padding: 15px 0;
 }
 
+.navbar-brand h1{
+    font-size: 26px;
+}
+
 .main-header .navbar-nav>li {
     padding: 0 10px;
 }
