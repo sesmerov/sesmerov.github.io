@@ -463,8 +463,13 @@ main {
     letter-spacing: 2px;
 }
 
+
 #projects .card-body {
     flex-grow: 1;
+}
+
+#projects .card-body .tech{
+    font-weight: 500;
 }
 
 #projects i {
