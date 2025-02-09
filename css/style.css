@@ -422,16 +422,16 @@ main {
     height: 50px;
 }
 
-.feature-box-small h6{
+.feature-box-small span{
     margin: 0;
     color: var(--dark-color);
     padding-left: 15px;
     font-weight: 500;
 }
 
-@media (max-width:375px){
-    h6{
-        font-size: 12px;
+@media (max-width: 375px) {
+    .feature-box-small span {
+        font-size: 12px; /* Ajuste para pantallas pequeñas */
     }
 }
 
