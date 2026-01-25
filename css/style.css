@@ -343,6 +343,99 @@ main {
     }
 }
 
+/* Experiencia */
+
+.experience-card {
+    width: 100%;
+}
+
+.experience-role {
+    font-size: 22px;
+    font-weight: 600;
+    margin: 0 0 6px;
+    color: var(--dark-color);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.experience-company {
+    margin: 0;
+    color: var(--dark-color);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.experience-location {
+    font-weight: 400;
+}
+
+.experience-dates {
+    color: var(--dark-color);
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 13px;
+    white-space: nowrap;
+}
+
+.experience-head {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 16px;
+    margin-bottom: 10px;
+}
+
+.experience-summary {
+    font-size: 17px;
+    color: var(--dark-color);
+}
+
+.experience-bullets {
+    margin: 0 0 14px;
+    padding-left: 18px;
+    color: var(--dark-color);
+}
+
+.experience-bullets li {
+    margin-bottom: 6px;
+}
+
+.experience-tech {
+    color: var(--dark-color);
+    font-size: 15px;
+}
+
+.experience-tech-label {
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+@media (max-width: 767px) {
+    .experience-head {
+        flex-direction: column;
+    }
+
+    .experience-dates {
+        white-space: normal;
+    }
+}
+
+.feature-box .content {
+    /* FIX: tu calc actual no es válido y además falta que el contenedor ocupe ancho */
+    max-width: calc(100% - 70px);
+    padding-left: 20px;
+
+    flex: 1;
+    min-width: 0;
+}
+
+.experience-head {
+    width: 100%;
+}
+
 /* Skills */
 
 .bg-feature {
