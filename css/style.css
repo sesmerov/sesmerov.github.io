@@ -414,6 +414,21 @@ main {
 }
 
 @media (max-width: 767px) {
+    .experience-card {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .experience-card .icon {
+        margin-bottom: 16px;
+    }
+
+    .feature-box.experience-card .content {
+        max-width: 100%;
+        width: 100%;
+        padding-left: 0;
+    }
+
     .experience-head {
         flex-direction: column;
     }
@@ -421,10 +436,22 @@ main {
     .experience-dates {
         white-space: normal;
     }
+
+    .experience-card .experience-dates.text-end {
+        text-align: left !important;
+    }
+
+    .experience-card .experience-dates.ms-auto {
+        margin-left: 0 !important;
+    }
+
+    .experience-bullets {
+        margin: 0 0 12px;
+        padding-left: 20px;
+    }
 }
 
 .feature-box .content {
-    /* FIX: tu calc actual no es válido y además falta que el contenedor ocupe ancho */
     max-width: calc(100% - 70px);
     padding-left: 20px;
 
@@ -471,11 +498,6 @@ main {
     background-color: #fff;
     color: var(--dark-color);
     font-size: 32px;
-}
-
-.feature-box .content {
-    max-width: calc(100%-70px);
-    padding-left: 20px;
 }
 
 .feature-box h5 {
