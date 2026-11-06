@@ -17,7 +17,6 @@
     <meta name="author" content="Diego Sesmero Fernandez" />
     <meta
       name="description"
-      content="Portfolio de Diego Sesmero, Desarrollador Full Stack con experiencia en proyectos de banca y consultoria tecnologica."
     />
     <link rel="canonical" href="https://sesmero.dev/" />
     <link
@@ -42,7 +41,7 @@
 
   <body>
     <header class="main-header">
-      <nav class="navbar header-nav navbar-expand-lg">
+      <nav class="navbar header-nav navbar-expand-xl" aria-label="Navegación principal">
         <div class="container">
           <a href="#" class="navbar-brand">
             <h1 class="mb-0">
@@ -50,13 +49,27 @@
             </h1>
           </a>
 
+          <button
+            class="navbar-toggler collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbar-collapse-toggle"
+            aria-controls="navbar-collapse-toggle"
+            aria-expanded="false"
+            aria-label="Abrir o cerrar el menú de navegación"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+
           <div
             class="collapse navbar-collapse justify-content-end"
             id="navbar-collapse-toggle"
           >
             <ul class="navbar-nav mx-auto">
               <li>
-                <a href="#about" class="nav-link">Sobre Mi</a>
+                <a href="#about" class="nav-link">Sobre mí</a>
               </li>
               <li>
                 <a href="#experience" class="nav-link">Experiencia</a>
@@ -70,23 +83,15 @@
               <li>
                 <a href="#certifications" class="nav-link">Certificaciones</a>
               </li>
+              <li class="d-xl-none">
+                <a href="#contact" class="nav-link">Contacto</a>
+              </li>
             </ul>
           </div>
 
-          <div class="ms-auto d-none d-lg-block">
+          <div class="ms-auto d-none d-xl-block">
             <a class="colored-btn" href="#contact">Contacto</a>
           </div>
-
-          <button
-            class="navbar-toggler collapsed"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbar-collapse-toggle"
-          >
-            <span></span>
-            <span></span>
-            <span></span>
-          </button>
         </div>
       </nav>
     </header>
@@ -104,11 +109,14 @@
                   Con experiencia en
                   <strong class="text-dark">Angular</strong> y
                   <strong class="text-dark">Node.js</strong>, participando en
-                  proyectos de banca y consultoría tecnológica. Apasionado por
-                  el desarrollo web y la
-                  <strong class="text-dark">computación en la nube</strong>, con
-                  gran capacidad de aprendizaje, disciplina y compromiso para
-                  aportar valor en cada proyecto.
+                  proyectos de banca y consultoría tecnológica.
+                </p>
+                <p>
+                  Orientando mi desarrollo profesional hacia
+                  <strong class="text-dark">cloud</strong> y la
+                  <strong class="text-dark">IA agéntica</strong>, con interés en
+                  la creación de agentes y su integración en aplicaciones
+                  y procesos de negocio.
                 </p>
                 <div class="d-flex flex-wrap justify-content-center gap-3">
                   <a
@@ -400,9 +408,14 @@
                   <div class="col-6 col-md-4 col-lg-3 col-xl-2 mx-auto">
                     <div class="feature-box feature-box-small bg-feature">
                       <div class="icon">
-                        <i class="bx bxl-python"></i>
+                        <img
+                          class="skill-logo"
+                          src="./media/images/snowflake.svg"
+                          alt=""
+                          aria-hidden="true"
+                        />
                       </div>
-                      <span>PYTHON</span>
+                      <span>SNOWFLAKE</span>
                     </div>
                   </div>
                   <div class="col-6 col-md-4 col-lg-3 col-xl-2 mx-auto">
@@ -419,22 +432,6 @@
                         <i class="bx bxl-github"></i>
                       </div>
                       <span>GITHUB</span>
-                    </div>
-                  </div>
-                  <div class="col-6 col-md-4 col-lg-3 col-xl-2 mx-auto">
-                    <div class="feature-box feature-box-small bg-feature">
-                      <div class="icon">
-                        <i class="bx bxl-bootstrap"></i>
-                      </div>
-                      <span>BOOTSTRAP</span>
-                    </div>
-                  </div>
-                  <div class="col-6 col-md-4 col-lg-3 col-xl-2 mx-auto">
-                    <div class="feature-box feature-box-small bg-feature">
-                      <div class="icon">
-                        <i class="bx bxl-tailwind-css"></i>
-                      </div>
-                      <span>TAILWIND</span>
                     </div>
                   </div>
                 </div>

@@ -1,3 +1,31 @@
+document.addEventListener('DOMContentLoaded', () => {
+    const menu = document.getElementById('navbar-collapse-toggle');
+    const toggle = document.querySelector('.navbar-toggler');
+    const desktop = window.matchMedia('(min-width: 1200px)');
+    const collapse = new bootstrap.Collapse(menu, { toggle: false });
+
+    menu.querySelectorAll('a[href^="#"]').forEach(link => {
+        link.addEventListener('click', () => {
+            if (!desktop.matches) {
+                collapse.hide();
+            }
+        });
+    });
+
+    document.addEventListener('keydown', event => {
+        if (event.key === 'Escape' && !desktop.matches && menu.classList.contains('show')) {
+            collapse.hide();
+            toggle.focus();
+        }
+    });
+
+    desktop.addEventListener('change', event => {
+        if (event.matches) {
+            collapse.hide();
+        }
+    });
+});
+
 function copy(text, targetId) {
 
     const input = document.createElement('input');

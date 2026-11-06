@@ -58,6 +58,10 @@ a:hover {
     font-size: 26px;
 }
 
+.main-header .navbar-brand {
+    flex-shrink: 0;
+}
+
 .main-header .navbar-nav>li {
     padding: 0 10px;
 }
@@ -71,6 +75,7 @@ a:hover {
     color: var(--dark-color);
     letter-spacing: 3px;
     position: relative;
+    white-space: nowrap;
 }
 
 .main-header .navbar-nav>li>.nav-link:after {
@@ -92,7 +97,7 @@ a:hover {
     width: 100%;
 }
 
-@media (max-width:991px) {
+@media (max-width:1199px) {
     .main-header .navbar-collapse {
         border-bottom: 2px solid var(--dark-color);
         border-top: 2px solid var(--dark-color);
@@ -101,6 +106,10 @@ a:hover {
         left: 0;
         right: 0;
         background: #fff;
+        max-height: calc(100vh - 80px);
+        max-height: calc(100dvh - 80px);
+        overflow-y: auto;
+        overscroll-behavior: contain;
     }
 
     .main-header .navbar-nav>li+li {
@@ -124,12 +133,17 @@ a:hover {
         box-shadow: none;
     }
 
+    .main-header .navbar-toggler:focus-visible {
+        outline: 3px solid var(--primary-color);
+        outline-offset: 4px;
+    }
+
     .main-header .navbar-toggler span {
         width: 25px;
         height: 2px;
         background-color: var(--dark-color);
         margin: 4px 0;
-        transition: 0.3;
+        transition: transform 0.3s ease, opacity 0.3s ease;
     }
 
     .main-header .navbar-toggler:not(.collapsed) span:nth-child(1) {
@@ -180,6 +194,10 @@ a:hover {
 main {
     position: relative;
     z-index: 1;
+}
+
+main section[id] {
+    scroll-margin-top: 90px;
 }
 
 /* Sobre Mi */
@@ -531,6 +549,13 @@ main {
 .feature-box-small .icon {
     width: 50px;
     height: 50px;
+}
+
+.feature-box-small .skill-logo {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+    opacity: 0.78;
 }
 
 .feature-box-small span {
