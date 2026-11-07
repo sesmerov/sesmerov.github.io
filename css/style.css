@@ -576,7 +576,7 @@ main section[id] {
 #projects .row {
     display: flex;
     flex-wrap: wrap;
-    gap: 1.5rem;
+    --bs-gutter-x: 1.5rem;
 }
 
 #projects .project {
@@ -640,6 +640,10 @@ main section[id] {
     #projects img {
         height: 250px;
     }
+}
+
+#projects img.project-screenshot {
+    object-fit: contain;
 }
 
 /* Certificaciones */
