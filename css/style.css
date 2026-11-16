@@ -598,6 +598,14 @@ main section[id] {
     font-size: 2rem;
 }
 
+#projects .project > .card-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: clamp(5rem, 4rem + 2vw, 5.5rem);
+    flex-shrink: 0;
+}
+
 #projects h3 {
     text-transform: uppercase;
     letter-spacing: 2px;
